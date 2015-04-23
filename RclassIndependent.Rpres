@@ -1,0 +1,83 @@
+RclassIndependent
+========================================================
+author: Judit Ungvari-Martin  
+date: April 24, 2015
+
+Descriptive Statistics of Sampling Birds in Two Forest Types
+========================================================
+
+Introduction of disseration is going to include basic information from my fieldwork.
+
+- Western Amazonia
+
+![map](PeruGISArcdesktop.jpg)
+
+Localities & Background
+========================================================
+- 22 months in the field
+- mark/recapture of birds 
+- 2 different habitat types
+
+*******
+
+![closer](GisArcdesktop.jpg)
+
+
+
+Packages Used
+========================================================
+
+```{r}
+library("knitr")
+library("gdata")
+library("vegan")
+library("bipartite")
+library("betapart")
+library("reshape")
+library("labdsv")
+library("dplyr")
+library("maps")
+library("mapdata")
+source("~/Dropbox/R resources/codes/pois_aov.R")
+library("vegan")
+library("maptools")
+library("RColorBrewer")
+library("mapplots")
+library("maps")
+library("mapdata")
+library("scales")
+```
+
+Dataset
+========================================================
+- basically the raw data straight from the field notes
+```{r, echo=TRUE}
+complete = read.csv(file="data/complete.csv", header=TRUE)
+(dim(complete))
+names(complete)
+```
+
+Dataset cleanup
+========================================================
+
+
+```{r}
+complete = complete[!is.na(complete$Regist),] #removes 77 unused lat long NA rows
+dim(complete)
+summary(complete$lon)
+summary(complete$lat) #use the min and max values for map making
+```
+
+First glance
+========================================================
+- Make a list of all the species and sort them
+```{r, echo=TRUE}
+# Species rank curve dataset
+(allsp = sort(table(complete$spp), decreasing = TRUE))
+```
+Rank curve for all captures
+========================================================
+```{r, echo=FALSE}
+barplot(allsp[allsp>2], #xlab = "Species", 
+        ylab = "Number of captures", cex.names=0.34,las=2) #Species Rank curve for all captures
+
