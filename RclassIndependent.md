@@ -1,4 +1,4 @@
-RclassIndependent
+Summarizing bird captures
 ========================================================
 author: Judit Ungvari-Martin  
 date: April 24, 2015
@@ -131,162 +131,103 @@ First glance
 # Species rank curve dataset
 (allsp = sort(table(complete$spp), decreasing = TRUE))
 ```
-
-```
-
-     Glyphorynchus spirurus              Dixiphia pipra 
-                       1570                         669 
-    Hylophylax poecilonotus            Pithys albifrons 
-                        551                         456 
-      Gymnopithys leucaspis        Mionectes oleagineus 
-                        452                         401 
-        Dendrocincla merula      Myrmotherula axillaris 
-                        257                         219 
-     Myrmotherula hauxwelli     Neopelma chrysocephalum 
-                        198                         191 
-       Lepidothrix coronata       Xiphorhynchus elegans 
-                        189                         186 
-   Megastictus margaritatus        Phaetornis bourcieri 
-                        174                         173 
-   Phaetornis superciliosus      Myrmoborus myotherinus 
-                        170                         147 
-      Automolus ochrolaemus        Pipra erythrocephala 
-                        122                          99 
-    Dendrocincla fuliginosa  Epinecrophylla haematonota 
-                         96                          89 
-        Schiffornis turdina            Catharus minimus 
-                         82                          81 
-             Xenops minutus        Corythopis torquatus 
-                         76                          74 
-        Thamnomanes caesius    Microcerculus marginatus 
-                         72                          64 
-         Thalurania furcata             Manacus manacus 
-                         64                          59 
-        Synallaxis rutilans   Terenotriccus  erythrurus 
-                         57                          57 
-          Formicarius colma        Percnostola arenarum 
-                         54                          51 
-      Sclerurus rufigularis          Hylophylax naevius 
-                         51                          50 
-          Geotrygon montana             Nonnula brunnea 
-                         46                          46 
-        Sclerurus mexicanus      Machaeropterus regulus 
-                         42                          40 
-          Malacoptila fusca          Myrmeciza castanea 
-                         40                          38 
-    Phlegopsis erythroptera          Threnetes leucurus 
-                         37                          36 
-           Myrmeciza fortis     Percnostola leucostigma 
-                         35                          31 
-         Catharus ustulatus        Thamnophilus murinus 
-                         29                          28 
-          Cnemotriccus spp.       Hyloctistes subulatus 
-                         26                          25 
-      Hypocnemis hypoxantha            Attila spadiceus 
-                         25                          23 
-    Hylophilus ochraceiceps          Chloroceryle aenea 
-                         22                          21 
- Rhegmatorhina melanosticta           Turdus albicollis 
-                         20                          20 
-        Heliodoxa aurescens     Cnipodectes subbrunneus 
-                         19                          17 
-      Conopophaga peruviana      Thamnomanes ardesiacus 
-                         16                          16 
-     Dendrocolaptes certhia     Ramphotrigon  ruficauda 
-                         14                          14 
-    Deconychura stictolaema      Platyrinchus saturatus 
-                         13                          13 
-      Cyanocompsa cyanoides     Frederickena unduligera 
-                         12                          12 
-        Galbula albirostris              Celeus elegans 
-                         12                          11 
-        Florisuga mellivora Heterocercus aurantiivertex 
-                         11                          11 
-      Tachyphonus surinamus        Hypocnemis peruviana 
-                         11                          10 
-         Neopipo cinnamomea   Onychorhynchus  coronatus 
-                         10                          10 
-         Thryothorus coraya            Glaucis hirsutus 
-                          9                           8 
-          Hylocharis cyanea              Momotus momota 
-                          8                           8 
-             Capito auratus       Attila citriniventris 
-                          7                           6 
-        Buteo  magnirostris       Tachyphonus cristatus 
-                          6                           6 
-   Thamnophilus schistaceus           Cercomacra  serva 
-                          6                           5 
-      Euphonia xanthogaster                Habia rubica 
-                          5                           5 
-       Laniocera  hypopyrra          Myiobius  barbatus 
-                          5                           5 
-   Myrmotherula longipennis       Oryzoborus angolensis 
-                          5                           5 
-        Rhytipterna simplex        Veniliornis  affinis 
-                          5                           5 
-      Micrastur gilvicollis   Myrmotherula menestriesii 
-                          4                           4 
-    Phaeothlypis fulvicauda            Sclateria naevia 
-                          4                           4 
- Stelgidopteryx  ruficollis           Tangara chilensis 
-                          4                           4 
-               Cacicus cela            Celeus grammicus 
-                          3                           3 
-    Chelidoptera  tenebrosa    Chlorostilbon mellisugus 
-                          3                           3 
-          Claravis pretiosa              Crotophaga ani 
-                          3                           3 
-      Gymnopithys lunulatus         Lipaugus vociferans 
-                          3                           3 
-     Lophotriccus  vitiosus            Monasa morphoeus 
-                          3                           3 
-     Philydor erythrocercum          Sclerurus caudatus 
-                          3                           3 
-     Selenidera reinwardtii     Caprimulgus  nigrescens 
-                          3                           2 
-      Cercomacra nigrescens         Chrysuronia  oenone 
-                          2                           2 
-       Columbina talpacotti       Deconycura longicauda 
-                          2                           2 
-       Euphonia rufiventris       Micrastur mirandollei 
-                          2                           2 
-           Neoctantes niger             Notarchus ordii 
-                          2                           2 
-    Pachyramphus marginatus  Pachyramphus polychopterus 
-                          2                           2 
-  Phoenicircus  nigricollis            Saltator grossus 
-                          2                           2 
-     Tyrannus melancholicus     Accipiter superciliosus 
-                          2                           1 
-         Amazilia fimbriata        Ammodramus aurifrons 
-                          1                           1 
-     Ancistrops strigilatus        Automolus infuscatus 
-                          1                           1 
-              Bucco tamatia     Campephilus rubricollis 
-                          1                           1 
-         Crypturellus  soui         Cyanerpes caeruleus 
-                          1                           1 
-          Cyanerpes cyaneus       Electron platyrynchus 
-                          1                           1 
-      Hylocharis sapphirina     Micromonacha lanceolata 
-                          1                           1 
-     Microrhopias quixensis              Myarchus ferox 
-                          1                           1 
-           Oporornis agilis  Poecilotriccus latirostris 
-                          1                           1 
-         Pteroglossus azara         Pygiptila stellaris 
-                          1                           1 
-     Ramphocaenus melanurus           Ramphocelus carbo 
-                          1                           1 
-    Rhynchocyclus olivaceus       Thamnophilus doliatus 
-                          1                           1 
-          Thraupis palmarum         Tityra semifasciata 
-                          1                           1 
-               Trogon rufus            Turdus lawrencii 
-                          1                           1 
-          Tyrannulus elatus      Xiphorhynchus guttatus 
-                          1                           1 
-```
 Rank curve for all captures
 ========================================================
 ![plot of chunk unnamed-chunk-5](RclassIndependent-figure/unnamed-chunk-5-1.png) 
+Further cleanup
+========================================================
+
+
+- Calculate the average number of captures, mean,stdev of forest.net
+
+```r
+summary(forest.net)
+```
+
+```
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  29.00   68.00   88.00   89.55  107.00  168.00 
+```
+
+```r
+(capmeans <- mean(forest.net))
+```
+
+```
+[1] 89.54839
+```
+
+```r
+(capsd <- sd(forest.net))
+```
+
+```
+[1] 29.16725
+```
+Create subsets of new captures, recaptures, repeated captures
+========================================================
+- Calculate number of captures per habitat
+
+```
+clay  wsf 
+1564 5114 
+```
+-wsf stands for white sand forests 
+
+
+Create subsets for habitats
+========================================================
+
+![plot of chunk unnamed-chunk-10](RclassIndependent-figure/unnamed-chunk-10-1.png) 
+
+Withing sandy forests there are 3 subsets of habitats
+========================================================
+
+
+![plot of chunk unnamed-chunk-11](RclassIndependent-figure/unnamed-chunk-11-1.png) 
+
+Number of sites per species
+=================================
+![plot of chunk unnamed-chunk-12](RclassIndependent-figure/unnamed-chunk-12-1.png) 
+- histogram of sorted data
+
+Comparing capture rates with a t-test
+=======
+
+```
+
+	Shapiro-Wilk normality test
+
+data:  Captures
+W = 0.9801, p-value = 0.1687
+```
+
+```
+Habitat: clay
+[1] 100.3684
+-------------------------------------------------------- 
+Habitat: wsf
+[1] 86.77027
+```
+
+```
+Habitat: clay
+[1] 31.60557
+-------------------------------------------------------- 
+Habitat: wsf
+[1] 28.06331
+```
+
+More histograms for number of captures
+=======
+![plot of chunk unnamed-chunk-14](RclassIndependent-figure/unnamed-chunk-14-1.png) 
+
+More histograms for species
+=======
+![plot of chunk unnamed-chunk-15](RclassIndependent-figure/unnamed-chunk-15-1.png) 
+- display legend using:
+
+```r
+legend("topright", c("Welch Two Sample t-test", 
+                 "p-value = 0.01018"), cex=0.55)
+```
