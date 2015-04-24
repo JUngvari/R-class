@@ -231,3 +231,36 @@ More histograms for species
 legend("topright", c("Welch Two Sample t-test", 
                  "p-value = 0.01018"), cex=0.55)
 ```
+
+Making maps
+============
+-map for some capture localities and species
+
+-map of Northern South America first
+
+```r
+map("worldHires", xlim=c(-90,-30), ylim=c(-30,12), col="gray95", fill=TRUE)
+```
+
+![plot of chunk unnamed-chunk-18](RclassIndependent-figure/unnamed-chunk-18-1.png) 
+
+Use rangemaps from IUCN
+========
+-there are shapefiles for all species
+
+![plot of chunk unnamed-chunk-19](RclassIndependent-figure/unnamed-chunk-19-1.png) 
+Closely related species
+=========
+
+
+![plot of chunk unnamed-chunk-21](RclassIndependent-figure/unnamed-chunk-21-1.png) 
+
+
+```r
+map("worldHires", xlim=c(-90,-30), ylim=c(-30,12), col="gray95", fill=TRUE)
+plot(NECHrange, add=TRUE, col=alpha("darkgreen", 0.6), border=FALSE)  
+plot(NESU, add=TRUE, col="dark red" )
+plot(NEPA, add=TRUE, col="hot pink" )
+plot(NECHRY, add=TRUE, col="yellow")
+plot(NEAU, add=TRUE, col="blue")
+```
