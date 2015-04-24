@@ -12,7 +12,7 @@ Sampling Birds in Two Forest Types
     - Western Amazonia
 
 *******
-![map](PeruGISArcdesktop.jpg)
+![map] (PeruGISArcdesktop.jpg)
 
 Localities & Background
 ========================================================
