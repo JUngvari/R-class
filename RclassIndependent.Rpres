@@ -170,10 +170,10 @@ barplot(tfsp[tfsp>5], #xlab = "Species",
         cex.names=0.6,las=2) #Species Rank curve for all captures)
 tfforest.caps <- summary(tf$general.habitat)
 tfforest.net <- summary(tf$NetlineYEAR)  ###
+
 ### Calculate the average number of captures, mean,stdev of forest.net
 tfcapmeans <- mean(tfforest.net)
 tfcapsd <- sd(tfforest.net)
-
 #Habitat specific - all white sands
 ws <- completeF[which(completeF$general.habitat =="wsf"),]
 wscap = newcap[ which(newcap$general.habitat =="wsf"),] #wsf
@@ -182,8 +182,7 @@ ws$NetlineYEAR <- drop.levels(ws$NetlineYEAR, reorder=TRUE)
 ws$spp <- drop.levels(ws$spp, reorder=TRUE)
 wsfsp = sort(table(wscap$spp), decreasing = TRUE)
 #make graph for birds captured in white sand forest
-barplot(wsfsp[wsfsp>5],#xlab = "Species", 
-        main="WSF",
+barplot(wsfsp[wsfsp>5], main="WSF",
         ylab = "Number of captures", cex.names=0.6,las=2) #Species Rank curve for all captures
 wsforest.caps <- summary(ws$general.habitat)
 wsforest.net <- summary(ws$NetlineYEAR)  ###
@@ -191,7 +190,6 @@ wsforest.net <- summary(ws$NetlineYEAR)  ###
 wscapmeans <- mean(wsforest.net)
 wscapsd <- sd(wsforest.net)
 #Habitat specific - chamizal
-
 chamizal = newcap[ which(newcap$Specific.Habitat =="chamizal"),]
 chamizal$spp <- drop.levels(chamizal$spp, reorder=TRUE)
 chamizal$Specific.Habitat <- drop.levels(chamizal$Specific.Habitat, reorder=TRUE)
@@ -205,18 +203,17 @@ vs$Specific.Habitat <- drop.levels(vs$Specific.Habitat, reorder=TRUE)
 vs$spp <- drop.levels(vs$spp, reorder=TRUE)
 vsspp = sort(table(vs$spp), decreasing = TRUE)
 #make graph for birds captured in white sand forest
-# barplot(vsspp[vsspp>5],#xlab = "Species", 
-#         main="Varillal Seco",
-#         ylab = "Number of captures", cex.names=0.5,las=2) #Species Rank curve for all captures
-
-# #Habitat specific - varillal humedo 
-# vhum = newcap[ which(newcap$Specific.Habitat =="varillal humedo"),]
-# vhum$Specific.Habitat <- drop.levels(vhum$Specific.Habitat, reorder=TRUE)
-# vhum$spp <- drop.levels(vhum$spp, reorder=TRUE)
-# vhsp = sort(table(vhum$spp), decreasing = TRUE)
-# barplot(vhsp[vhsp>5], #xlab = "Species", 
-#         main="varillal humedo",
-#         ylab = "Number of captures", cex.names=0.4,las=2) #Species Rank curve for all captures
+barplot(vsspp[vsspp>5],#xlab = "Species", 
+         main="Varillal Seco",
+         ylab = "Number of captures", cex.names=0.5,las=2) #Species Rank curve for all captures
+#Habitat specific - varillal humedo 
+vhum = newcap[ which(newcap$Specific.Habitat =="varillal humedo"),]
+vhum$Specific.Habitat <- drop.levels(vhum$Specific.Habitat, reorder=TRUE)
+vhum$spp <- drop.levels(vhum$spp, reorder=TRUE)
+vhsp = sort(table(vhum$spp), decreasing = TRUE)
+barplot(vhsp[vhsp>5], #xlab = "Species", 
+         main="varillal humedo",
+         ylab = "Number of captures", cex.names=0.4,las=2) #Species Rank curve for all captures
 ```
 
 Number of sites per species
