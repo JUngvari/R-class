@@ -1,15 +1,17 @@
-Summarizing bird captures
+Bird captures
 ========================================================
+![birdrichness](bird_richness.jpg)
 author: Judit Ungvari-Martin  
-date: April 24, 2015
 
-Descriptive Statistics of Sampling Birds in Two Forest Types
-========================================================
 
-Introduction of disseration is going to include basic information from my fieldwork.
+Sampling Birds in Two Forest Types    
 
-- Western Amazonia
+================================================
 
+
+    - Western Amazonia
+
+*******
 ![map](PeruGISArcdesktop.jpg)
 
 Localities & Background
@@ -131,6 +133,11 @@ First glance
 # Species rank curve dataset
 (allsp = sort(table(complete$spp), decreasing = TRUE))
 ```
+
+![diversity](avianBio.jpg)
+
+
+
 Rank curve for all captures
 ========================================================
 ![plot of chunk unnamed-chunk-5](RclassIndependent-figure/unnamed-chunk-5-1.png) 
@@ -142,11 +149,6 @@ Further cleanup
 
 ```r
 summary(forest.net)
-```
-
-```
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  29.00   68.00   88.00   89.55  107.00  168.00 
 ```
 
 ```r
@@ -172,19 +174,15 @@ Create subsets of new captures, recaptures, repeated captures
 clay  wsf 
 1564 5114 
 ```
--wsf stands for white sand forests 
+- wsf stands for white sand forests 
 
 
 Create subsets for habitats
 ========================================================
-
-![plot of chunk unnamed-chunk-10](RclassIndependent-figure/unnamed-chunk-10-1.png) 
-
-Withing sandy forests there are 3 subsets of habitats
-========================================================
+-- within sandy forests there are 3 subsets of habitats
 
 
-![plot of chunk unnamed-chunk-11](RclassIndependent-figure/unnamed-chunk-11-1.png) 
+![plot of chunk unnamed-chunk-11](RclassIndependent-figure/unnamed-chunk-11-1.png) ![plot of chunk unnamed-chunk-11](RclassIndependent-figure/unnamed-chunk-11-2.png) 
 
 Number of sites per species
 =================================
@@ -247,20 +245,17 @@ map("worldHires", xlim=c(-90,-30), ylim=c(-30,12), col="gray95", fill=TRUE)
 Use rangemaps from IUCN
 ========
 -there are shapefiles for all species
+*******
 
 ![plot of chunk unnamed-chunk-19](RclassIndependent-figure/unnamed-chunk-19-1.png) 
 Closely related species
 =========
+![neopelmas] (future.jpg)
 
 
+*******
 ![plot of chunk unnamed-chunk-21](RclassIndependent-figure/unnamed-chunk-21-1.png) 
 
-
-```r
-map("worldHires", xlim=c(-90,-30), ylim=c(-30,12), col="gray95", fill=TRUE)
-plot(NECHrange, add=TRUE, col=alpha("darkgreen", 0.6), border=FALSE)  
-plot(NESU, add=TRUE, col="dark red" )
-plot(NEPA, add=TRUE, col="hot pink" )
-plot(NECHRY, add=TRUE, col="yellow")
-plot(NEAU, add=TRUE, col="blue")
-```
+Questions?
+=====
+![sand](sand.jpg)
